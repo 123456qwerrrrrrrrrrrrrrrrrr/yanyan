@@ -711,6 +711,10 @@
 		BE69C9D81F0394DD009ACE2E /* JJTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE69C9D71F0394DD009ACE2E /* JJTools.framework */; };
 		BE69C9DB1F039A78009ACE2E /* MessageTableViewCells.m in Sources */ = {isa = PBXBuildFile; fileRef = BE69C9DA1F039A78009ACE2E /* MessageTableViewCells.m */; };
 		BE69C9DE1F04DEE6009ACE2E /* UIView+Init.m in Sources */ = {isa = PBXBuildFile; fileRef = BE69C9DD1F04DEE6009ACE2E /* UIView+Init.m */; };
+		BED236531F05EE7500834070 /* M_AttentionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BED236521F05EE7500834070 /* M_AttentionViewController.m */; };
+		BED236561F05F1AE00834070 /* AttentionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BED236551F05F1AE00834070 /* AttentionTableViewCell.m */; };
+		BED236591F06010D00834070 /* M_ReceiveCommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BED236581F06010D00834070 /* M_ReceiveCommentViewController.m */; };
+		BED2365C1F06016500834070 /* M_ReceiveCommentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BED2365B1F06016500834070 /* M_ReceiveCommentTableViewCell.m */; };
 		CCBBA5501F03B210009C8AA4 /* ActorListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCBBA54F1F03B210009C8AA4 /* ActorListViewController.m */; };
 		CCBBA5581F03B226009C8AA4 /* HotCommentM.m in Sources */ = {isa = PBXBuildFile; fileRef = CCBBA5541F03B226009C8AA4 /* HotCommentM.m */; };
 		CCBBA5591F03B226009C8AA4 /* MovieIntroduced.m in Sources */ = {isa = PBXBuildFile; fileRef = CCBBA5561F03B226009C8AA4 /* MovieIntroduced.m */; };
@@ -1716,6 +1720,14 @@
 		BE69C9DA1F039A78009ACE2E /* MessageTableViewCells.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageTableViewCells.m; sourceTree = "<group>"; };
 		BE69C9DC1F04DEE6009ACE2E /* UIView+Init.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Init.h"; sourceTree = "<group>"; };
 		BE69C9DD1F04DEE6009ACE2E /* UIView+Init.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Init.m"; sourceTree = "<group>"; };
+		BED236511F05EE7500834070 /* M_AttentionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M_AttentionViewController.h; sourceTree = "<group>"; };
+		BED236521F05EE7500834070 /* M_AttentionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M_AttentionViewController.m; sourceTree = "<group>"; };
+		BED236541F05F1AE00834070 /* AttentionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttentionTableViewCell.h; sourceTree = "<group>"; };
+		BED236551F05F1AE00834070 /* AttentionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttentionTableViewCell.m; sourceTree = "<group>"; };
+		BED236571F06010D00834070 /* M_ReceiveCommentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M_ReceiveCommentViewController.h; sourceTree = "<group>"; };
+		BED236581F06010D00834070 /* M_ReceiveCommentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M_ReceiveCommentViewController.m; sourceTree = "<group>"; };
+		BED2365A1F06016500834070 /* M_ReceiveCommentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M_ReceiveCommentTableViewCell.h; sourceTree = "<group>"; };
+		BED2365B1F06016500834070 /* M_ReceiveCommentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M_ReceiveCommentTableViewCell.m; sourceTree = "<group>"; };
 		C3E29C8EA339F64F51FBA610 /* Pods-yanyan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yanyan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-yanyan/Pods-yanyan.debug.xcconfig"; sourceTree = "<group>"; };
 		CCBBA54E1F03B210009C8AA4 /* ActorListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActorListViewController.h; sourceTree = "<group>"; };
 		CCBBA54F1F03B210009C8AA4 /* ActorListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActorListViewController.m; sourceTree = "<group>"; };
@@ -3452,6 +3464,10 @@
 				BE69C9D31F0379DA009ACE2E /* View */,
 				BE69C9D41F037A0F009ACE2E /* MessageViewController.h */,
 				BE69C9D51F037A0F009ACE2E /* MessageViewController.m */,
+				BED236511F05EE7500834070 /* M_AttentionViewController.h */,
+				BED236521F05EE7500834070 /* M_AttentionViewController.m */,
+				BED236571F06010D00834070 /* M_ReceiveCommentViewController.h */,
+				BED236581F06010D00834070 /* M_ReceiveCommentViewController.m */,
 			);
 			path = Message;
 			sourceTree = "<group>";
@@ -3468,6 +3484,10 @@
 			children = (
 				BE69C9D91F039A78009ACE2E /* MessageTableViewCells.h */,
 				BE69C9DA1F039A78009ACE2E /* MessageTableViewCells.m */,
+				BED236541F05F1AE00834070 /* AttentionTableViewCell.h */,
+				BED236551F05F1AE00834070 /* AttentionTableViewCell.m */,
+				BED2365A1F06016500834070 /* M_ReceiveCommentTableViewCell.h */,
+				BED2365B1F06016500834070 /* M_ReceiveCommentTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -4213,6 +4233,7 @@
 				BE69C7321F03525C009ACE2E /* ToolbarButton.m in Sources */,
 				BE69C7411F03525D009ACE2E /* TBActionBackground.m in Sources */,
 				BE69C73A1F03525C009ACE2E /* ChineseToPinyinResource.m in Sources */,
+				BED236591F06010D00834070 /* M_ReceiveCommentViewController.m in Sources */,
 				BE542B431F0237F100B474A9 /* UIImage+Rotate.m in Sources */,
 				BE69C70B1F03525C009ACE2E /* EaseConvertToCommonEmoticonsHelper.m in Sources */,
 				BE69C9381F0352DA009ACE2E /* ActorsAuditionCell.m in Sources */,
@@ -4258,6 +4279,7 @@
 				BE69C93E1F0352DA009ACE2E /* ChatRoomLocationTableViewCell.m in Sources */,
 				BE542D471F02528C00B474A9 /* SetMessage.m in Sources */,
 				BE69C91A1F0352D9009ACE2E /* ChatViewController.m in Sources */,
+				BED2365C1F06016500834070 /* M_ReceiveCommentTableViewCell.m in Sources */,
 				BE542B421F0237F100B474A9 /* UIImage+FlatUI.m in Sources */,
 				BE69C9661F0352DA009ACE2E /* TZImageManager.m in Sources */,
 				CCBBA5641F03B267009C8AA4 /* HotTvCommentsCollectionViewCell.m in Sources */,
@@ -4325,6 +4347,7 @@
 				BE69C91F1F0352D9009ACE2E /* BeenForbidModel.m in Sources */,
 				BE69C5501F03525C009ACE2E /* PSTCollectionView.m in Sources */,
 				BE69C9541F0352DA009ACE2E /* RolePlayTableViewCell.m in Sources */,
+				BED236561F05F1AE00834070 /* AttentionTableViewCell.m in Sources */,
 				BE69C5371F03525C009ACE2E /* BMChineseSort.m in Sources */,
 				BE542B471F0237F100B474A9 /* UITableViewCell+deselectColor.m in Sources */,
 				BE69C70C1F03525C009ACE2E /* EaseConvertToCommonEmoticonsHelperD.m in Sources */,
@@ -4346,6 +4369,7 @@
 				BE69C86A1F035283009ACE2E /* HotTVRoleTableViewCell.m in Sources */,
 				BE69C7471F03525D009ACE2E /* UIView+TBAdditions.m in Sources */,
 				BE69C9391F0352DA009ACE2E /* CharacterIntroduced.m in Sources */,
+				BED236531F05EE7500834070 /* M_AttentionViewController.m in Sources */,
 				BE69C9531F0352DA009ACE2E /* RoleIntroduceTableViewCell.m in Sources */,
 				BE69C73F1F03525D009ACE2E /* PinyinHelper.m in Sources */,
 				BE69C93C1F0352DA009ACE2E /* chatRoomInfoTableViewCell.m in Sources */,

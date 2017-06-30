@@ -8,6 +8,8 @@
 
 #import "MessageViewController.h"
 #import "MessageTableViewCells.h"
+#import "M_AttentionViewController.h"
+#import "M_ReceiveCommentViewController.h"
 @interface MessageViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong)UITableView * m_tableView;
 @end
@@ -49,11 +51,19 @@
 }
 -(UIView *)myHeaderView
 {
+    WS(mySelf);
     UIView *headerView=[UIView new];
     headerView.backgroundColor=[UIColor clearColor];
     
-    UIView *cell1=[UIView new];
+    UIButton *cell1=[UIButton new];
     cell1.backgroundColor=[UIColor clearColor];
+    
+    [cell1 handleControlEvent:UIControlEventTouchUpInside withBlock:^{
+        M_ReceiveCommentViewController *comment=[[M_ReceiveCommentViewController alloc] init];
+        self.hidesBottomBarWhenPushed=YES;
+        [mySelf.navigationController pushViewController:comment animated:YES];
+        self.hidesBottomBarWhenPushed=NO;
+    }];
     UIImageView *imgTitle1=[UIImageView new];
     imgTitle1.image=ImageNamed(@"avatar");
     [DTools getCorner:imgTitle1 radius:RW(50)];
@@ -77,9 +87,11 @@
     line1.backgroundColor=RGBLineColor;
     [cell1 addSubview:line1];
     
-    UIView *cell2=[UIView new];
+    UIButton *cell2=[UIButton new];
     cell2.backgroundColor=[UIColor clearColor];
-    
+    [cell2 handleControlEvent:UIControlEventTouchUpInside withBlock:^{
+        
+    }];
     UIImageView *imgTitle2=[UIImageView new];
     imgTitle2.image=ImageNamed(@"avatar");
     [DTools getCorner:imgTitle2 radius:RW(50)];
@@ -104,8 +116,16 @@
     line2.backgroundColor=RGBLineColor;
     [cell2 addSubview:line2];
     
-    UIView *cell3=[UIView new];
+    UIButton *cell3=[UIButton new];
     cell3.backgroundColor=[UIColor clearColor];
+    
+    [cell3 handleControlEvent:UIControlEventTouchUpInside withBlock:^{
+        
+        M_AttentionViewController *attention=[[M_AttentionViewController alloc] init];
+        self.hidesBottomBarWhenPushed=YES;
+        [mySelf.navigationController pushViewController:attention animated:YES];
+          self.hidesBottomBarWhenPushed=NO;
+    }];
     UIImageView *imgTitle3=[UIImageView new];
     imgTitle3.image=ImageNamed(@"avatar");
     [DTools getCorner:imgTitle3 radius:RW(50)];
